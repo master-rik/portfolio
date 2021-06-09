@@ -1,0 +1,47 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/font";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/animations";
+
+@import "blocks/promo";
+@import "blocks/title";
+@import "blocks/btn";
+@import "blocks/sidepanel";
+@import "blocks/menu";
+@import "blocks/about";
+@import "blocks/resume";
+@import "blocks/mastery";
+@import "blocks/portfolio";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/pageup";
+@import "blocks/carousel";
+
+@import "blocks/media";
+
+* {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	position: relative;
+}
+.divider {
+	width: 60px;
+	height: 3px;
+	background-color: $main-color;
+	margin: 25px auto 0 auto;
+}
+
+p {
+	margin-bottom: 0;
+}

@@ -1,0 +1,133 @@
+.contacts {
+	padding: 120px 0 90px 0;
+	&__wrapper {
+		padding: 0 35px 0 52px;
+		display: grid;
+		grid-template-columns: 400px 585px;
+		justify-content: space-between;
+	}
+	&__photo {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__descr {
+		padding-top: 12px;
+		.divider {
+			margin: 0;
+		}
+	}
+	&__title {
+		position: relative;
+		@include before-circle;
+		padding-left: 12px;
+	}
+	&__text,
+	&__social {
+		margin-top: 20px;
+	}
+	&__link {
+		margin-right: 25px;
+		img {
+			max-width: 30px;
+			max-height: 30px;
+		}
+	}
+	&__form {
+		margin-top: 30px;
+		display: grid;
+		grid-template: 45px 190px 45px / repeat(2, 280px);
+		justify-content: space-between;
+		row-gap: 30px;
+		label {
+			display: block;
+			position: absolute;
+			top: -10px;
+			left: 12px;
+			height: 18px;
+			padding: 0 8px;
+			background-color: #fff;
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+	}
+	&__input {
+		position: relative;
+		input {
+			width: 100%;
+			display: block;
+			height: 100%;
+			padding: 0 20px;
+			font-size: 12px;
+		}
+	}
+
+	&__triggers {
+		grid-column: 1/3;
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+		column-gap: 30px;
+	}
+	&__policy {
+		position: relative;
+		font-size: 12px;
+		line-height: 14px;
+		display: flex;
+		align-items: center;
+		input {
+			margin-right: 10px;
+		}
+	}
+	&__textarea {
+		position: relative;
+		grid-column: 1 / 3;
+		textarea {
+			width: 100%;
+			height: 100%;
+			resize: none;
+			padding: 20px;
+			font-size: 12px;
+		}
+	}
+	&__btn {
+		border: none;
+		font-weight: 700;
+		line-height: 21px;
+		font-size: 14px;
+	}
+}
+
+#name-error.error,
+#email-error.error {
+	color: red;
+	position: absolute;
+	top: -25px;
+	left: 10px;
+	padding-left: 10px;
+	box-shadow: 0 0 8px 7px #fff;
+}
+#text-error.error {
+	color: red;
+	position: absolute;
+	top: -25px;
+	left: 13px;
+	padding: 0 7px;
+	box-shadow: 0 0 8px 7px #fff;
+}
+input.error,
+textarea.error {
+	box-shadow: 0px 0px 15px 0px red;
+}
+
+#checkbox-error {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	color: red;
+	width: 320px;
+	font-size: 14px;
+	padding: 0;
+}
